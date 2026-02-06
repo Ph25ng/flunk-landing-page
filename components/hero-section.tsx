@@ -62,7 +62,4 @@ export function HeroSection() {
   )
 }
 
-```
 
-```
-```diff
