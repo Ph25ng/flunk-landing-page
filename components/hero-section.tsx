@@ -3,14 +3,21 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Star } from 'lucide-react'
 
+
 export function HeroSection() {
+  const headingStyle = {
+    animation: 'fadeIn 1s ease-in-out',
+  };
+
+
+
   const scrollToWaitlist = () => {
     document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
     <section className="relative overflow-hidden border-b border-border">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div className="container relative mx-auto px-4 py-24 sm:py-32 lg:py-40">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm text-primary">
@@ -18,7 +25,7 @@ export function HeroSection() {
             <span className="text-balance">{'Developer-first review integration'}</span>
           </div>
           
-          <h1 className="mb-6 text-balance font-sans text-5xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-balance font-sans text-5xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl" style={headingStyle}>
             {'Google reviews on your site.'}
             <br />
             <span className="text-primary">{'Zero hassle.'}</span>
@@ -54,3 +61,4 @@ export function HeroSection() {
     </section>
   )
 }
+
