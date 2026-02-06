@@ -27,6 +27,9 @@ export function HeroSection() {
           <p className="mx-auto mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
             {'Flunk is the DX-friendly way to embed authentic Google reviews on your website. One component, two lines of code, infinite trust.'}
           </p>
+          <p className="mx-auto mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
+            {'Why bother yourself with horrible DX when you can choose us'}
+          </p>
           
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button 
